@@ -3,7 +3,7 @@
 <div class="fun-grid">
   {% for item in items %}
     <figure class="fun-item">
-      <a class="fun-link" href="{{ '/assets/img/fun/' | append: item.file | relative_url }}">
+
         <img
           src="{{ '/assets/img/fun/' | append: item.file | relative_url }}"
           alt="{{ item.caption | escape }}"
