@@ -2,7 +2,7 @@
 - name: "Ho-Il Ji"
   role: "PI / Research Scientist"
   group: "Faculty"
-  photo: "hoilji.jpg"          # assets/img/team/hoilji.jpg
+  photo: "hiji.jpg"          # assets/img/team/hiji.jpg
   email: "hoilji@kist.re.kr"
   affiliation: "KIST"
   interests: ["PCFC/PCEC", "Ru exsolution", "LOHC catalysts"]
