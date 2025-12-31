@@ -13,3 +13,34 @@ $max-content-width: {{ site.max_width }};
   "base",
   "distill"
 ;
+
+/* Fun gallery grid (2~4 columns responsive) */
+.fun-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* 2~4열 자동 */
+  gap: 18px;
+  margin-top: 1rem;
+}
+
+.fun-item{
+  margin: 0;
+}
+
+.fun-link{
+  display: block;
+}
+
+/* thumbnail style */
+.fun-item img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* caption */
+.fun-item figcaption{
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: var(--global-text-color);
+}
