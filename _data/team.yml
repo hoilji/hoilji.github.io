@@ -1,0 +1,18 @@
+# _data/team.yml
+- name: "Ho-Il Ji"
+  role: "PI / Research Scientist"
+  group: "Faculty"
+  photo: "hoilji.jpg"          # assets/img/team/hoilji.jpg
+  email: "hoilji@kist.re.kr"
+  affiliation: "KIST"
+  interests: ["PCFC/PCEC", "Ru exsolution", "LOHC catalysts"]
+  bio: "짧은 소개/연구요약을 여기에 길게 써도 됩니다. 이 페이지에서 전부 보여줄 거라면 3~6문장 정도가 보기 좋아요."
+
+- name: "aa Aa"
+  role: "PhD Student"
+  group: "Students"
+  photo: "aaa.jpg"
+  email: ""
+  affiliation: "KIST"
+  interests: ["Proton conductors", "Microkinetics"]
+  bio: "..."
