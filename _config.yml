@@ -267,8 +267,8 @@ display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will
 
 scholar:
 
-  last_name: [Ji]
-  first_name: [Ho-Il]
+  last_name: ["Ji", "ji"]
+  first_name: ["Ho-Il", "Ho-il", "Ho Il"]
 
   style: apa
   locale: en
