@@ -15,56 +15,13 @@ $max-content-width: {{ site.max_width }};
 Author highlight
 ========================= */
 .author-self {
-text-decoration: underline;
-font-style: normal;
+  text-decoration: underline;
+  font-style: normal;
 }
 
-/* =========================
-Publications layout
-========================= */
-
-/* One publication row: keep preview + text on the same line /
-.pub-row{
-display: flex;
-flex-wrap: nowrap !important; / 절대 줄바꿈 금지 */
-gap: 16px;
-align-items: flex-start;
-}
-
-/* Left column: fixed width (preview / badge area) /
-.pub-left{
-flex: 0 0 220px; / ← 여기 숫자만 조절하면 폭 변경 */
-max-width: 220px;
-}
-
-/* Right column: flexible text area /
-.pub-right{
-flex: 1 1 auto;
-min-width: 0; / 긴 제목/저자 때문에 깨지는 것 방지 */
-}
-
-/* Preview image: fixed width to column, height free */
-.pub-left img.preview,
-img.preview{
-width: 100%;
-height: auto;
-display: block;
-}
-
-/* Badge-only entries (no image) */
-.pub-left.abbr{
-padding-top: 4px;
-}
-
-/* =========================
-Mobile layout
-========================= */
-@media (max-width: 576px){
-.pub-row{
-flex-wrap: wrap !important;
-}
-.pub-left{
-flex: 0 0 100%;
-max-width: 100%;
-}
+/* preview image: column width에 맞추고, 높이는 자동 */
+img.preview {
+  width: 100%;
+  height: auto;
+  display: block;
 }
