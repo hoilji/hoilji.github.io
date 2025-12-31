@@ -946,4 +946,31 @@ img.preview {
   display: block;
 }
 
+.pub-row {
+  display: flex;
+  flex-wrap: nowrap; /* ← 절대 줄바꿈 금지 */
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.pub-left {
+  flex: 0 0 220px; /* ← 너무 크게 잡았으면 줄바꿈 유발 */
+  max-width: 220px;
+}
+
+.pub-right {
+  flex: 1 1 auto;
+  min-width: 0; /* ← 이게 없으면 긴 제목 때문에 줄바꿈/깨짐 */
+}
+
+@media (max-width: 576px) {
+  .pub-row {
+    flex-wrap: wrap;
+  }
+  .pub-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
