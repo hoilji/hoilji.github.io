@@ -3,7 +3,7 @@ layout: page
 title: Team
 permalink: /team/
 nav: true
-nav_order: 3
+nav_order: 2
 ---
 
 We are an interdisciplinary team working on protonic ceramics, electrocatalysis, and hydrogen/ammonia energy materials.
