@@ -922,4 +922,28 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   font-style: normal; /* italic 제거 */
 }
 
+/* Publications row layout: fixed left column, flexible right column */
+.pub-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.pub-left {
+  flex: 0 0 180px; /* ← 여기 숫자를 2배로 생각하고 조절 (예: 160→320) */
+  max-width: 180px;
+}
+
+.pub-right {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Make preview image fill the left column width, height free */
+img.preview {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /*# sourceMappingURL=main.css.map */
