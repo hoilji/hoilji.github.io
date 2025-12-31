@@ -1,0 +1,20 @@
+{% assign items = site.data[include.data] %}
+
+<div class="fun-grid">
+  {% for item in items %}
+    <figure class="fun-item">
+      <a class="fun-link" href="{{ '/assets/img/fun/' | append: item.file | relative_url }}">
+        <img
+          src="{{ '/assets/img/fun/' | append: item.file | relative_url }}"
+          alt="{{ item.caption | escape }}"
+          loading="lazy"
+          data-zoomable
+        >
+      </a>
+
+      {% if item.caption %}
+        <figcaption>{{ item.caption }}</figcaption>
+      {% endif %}
+    </figure>
+  {% endfor %}
+</div>
