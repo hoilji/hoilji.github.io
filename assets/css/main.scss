@@ -1,47 +1,70 @@
+@charset "utf-8";
+
+// Dimensions
+$max-content-width: {{ site.max_width }};
+
+@import
+"variables",
+"themes",
+"layout",
+"base",
+"distill"
+;
+
+/* =========================
+Author highlight
+========================= */
 .author-self {
-  text-decoration: underline;
-  font-style: normal;
+text-decoration: underline;
+font-style: normal;
 }
 
-/* Publications row layout: fixed left column + flexible right column */
+/* =========================
+Publications layout
+========================= */
+
+/* One publication row: keep preview + text on the same line /
 .pub-row{
-  display: flex;
-  flex-wrap: nowrap !important;   /* 핵심: 줄바꿈 절대 금지 */
-  gap: 16px;
-  align-items: flex-start;
+display: flex;
+flex-wrap: nowrap !important; / 절대 줄바꿈 금지 */
+gap: 16px;
+align-items: flex-start;
 }
 
-/* left column width (2x 느낌으로 조절) */
+/* Left column: fixed width (preview / badge area) /
 .pub-left{
-  flex: 0 0 220px;                /* 여기만 원하는 폭으로 조절 */
-  max-width: 220px;
+flex: 0 0 220px; / ← 여기 숫자만 조절하면 폭 변경 */
+max-width: 220px;
 }
 
-/* right column */
+/* Right column: flexible text area /
 .pub-right{
-  flex: 1 1 auto;
-  min-width: 0;                   /* 핵심: 긴 텍스트 때문에 깨짐 방지 */
+flex: 1 1 auto;
+min-width: 0; / 긴 제목/저자 때문에 깨지는 것 방지 */
 }
 
-/* preview image: fixed width to container, free height */
+/* Preview image: fixed width to column, height free */
 .pub-left img.preview,
 img.preview{
-  width: 100%;
-  height: auto;
-  display: block;
+width: 100%;
+height: auto;
+display: block;
 }
 
-/* mobile: stack */
-@media (max-width: 576px){
-  .pub-row{
-    flex-wrap: wrap !important;
-  }
-  .pub-left{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
+/* Badge-only entries (no image) */
 .pub-left.abbr{
-  padding-top: 4px;
+padding-top: 4px;
+}
+
+/* =========================
+Mobile layout
+========================= */
+@media (max-width: 576px){
+.pub-row{
+flex-wrap: wrap !important;
+}
+.pub-left{
+flex: 0 0 100%;
+max-width: 100%;
+}
 }
