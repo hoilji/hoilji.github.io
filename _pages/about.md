@@ -20,12 +20,14 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 <p>
-  We develop protonic ceramic electrochemical platforms for energy–chemical conversion.<br>
-  <small><em style="color: var(--global-text-color-light);">
+  <span style="font-size:1.3rem; font-weight:500;">
+    We develop protonic ceramic electrochemical platforms for energy–chemical conversion.
+  </span><br>
+  <em style="color:var(--global-text-color-light);">
     Grounded in solid-state ionics, electrochemistry, and ceramic processing.
-  </em></small>
+  </em>
 </p>
+
+<p align="center">
+  <img src="/assets/img/PCFC_EC_NH3.png" width="300">
 </p>
-<figure>
-  <img src="/assets/img/PCFC_EC_NH3.png" width="600">
-</figure>
