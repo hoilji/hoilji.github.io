@@ -20,7 +20,7 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 <p>
-  <span style="font-size:1.3rem; font-weight:500;">
+  <span style="font-size:1.6rem; font-weight:500;">
     We develop protonic ceramic electrochemical platforms for energy–chemical conversion.
   </span><br>
   <em style="color:var(--global-text-color-light);">
