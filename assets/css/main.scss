@@ -155,7 +155,3 @@ $max-content-width: {{ site.max_width }};
 .profile + .clearfix + h2 + h2 {
   margin-top: 2.5rem;
 }
-
-.text-muted{
-  color: var(--global-text-color-light);
-}
