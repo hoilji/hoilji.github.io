@@ -1,9 +1,8 @@
 # _data/team.yml
-- name: "Ho-Il Ji"
+- name: "Ho-Il Ji (지호일)"
   role: "PI / Principal Researcher"
   group: "Faculty"
   photo: "hiji.jpg"          # assets/img/team/hiji.jpg
-  email: "hiji@kist.re.kr"
   interests: ["PCFC/PCEC", "Solid State Ionics", "Ceramic Process"]
   affiliation: "
   Korea Institute of Science and Technology (KIST)<br>
@@ -17,8 +16,23 @@
         <small><em>with Prof. H.I. Yoo</em></small></li>
     <li>BS in Materials Science & Engineering, Seoul Nat'l Univ. (2003-2007)</li>
   </ul>
-  
-  짧은 소개/연구요약을 여기에 길게 써도 됩니다. 이 페이지에서 전부 보여줄 거라면 3~6문장 정도가 보기 좋아요."
+  <br>
+      <strong>Employment</strong>
+  <ul>
+    <li>Principal Researcher, KIST (2022-Present)<br></li>
+    <li>Senior Researcher, KIST (2018-2021)<br></li>
+    <li>Researcher, KIST (2009-2017)<br></li>
+    <li>Associate Prof., UST (2018-Present)<br></li>
+    <li>Predoc. Scholar, Northwestern Univ. (2015-2017)</li>
+  </ul>
+      <strong>Contact Information</strong>
+  <ul>
+    <li>Office: L3426, KIST<br></li>
+    <li>Phone: 82-2-958-5521<br></li>
+    <li>Email: hiji@kist.re.kr</li>
+    <li><a href="https://scholar.google.co.kr/citations?user=VNAIDFkAAAAJ&hl=en">Google Scholar profile</a></li>
+  </ul>
+  "
 
 - name: "aa Aa"
   role: "PhD Student"
