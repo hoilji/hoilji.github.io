@@ -102,14 +102,10 @@ $max-content-width: {{ site.max_width }};
 }
 
 .team-affil,
-.team-link,
+.team-links,
 .team-email{
   font-size: 0.9rem;
   margin-top: 6px;
-}
-
-.team-link{
-  display: block;
 }
 
 .team-tags{
