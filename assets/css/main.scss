@@ -108,6 +108,10 @@ $max-content-width: {{ site.max_width }};
   margin-top: 6px;
 }
 
+.team-link{
+  display: block;
+}
+
 .team-tags{
   margin-top: 8px;
   display: flex;
