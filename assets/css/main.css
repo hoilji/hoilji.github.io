@@ -995,13 +995,12 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 
 .team-name {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 0 0 2px 0;
 }
 
 .team-role {
-  font-size: 0.95rem;
-  color: var(--global-text-color-light);
+  font-size: 1rem;
   margin: 0;
 }
 
