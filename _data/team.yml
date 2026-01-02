@@ -64,27 +64,25 @@
 - group: "Students"    # Researchers, Students, Alumni
   name: "HyeonWoo Kim"    # Ho-Il Ji (지호일)
   role: "PhD Student"  # PostDoc, MS/PhD Student, PhD Student, MS Student
-  photo: "aaa.jpg"     # assets/img/team/xxx.xxx
+  photo: "증명사진.jpg"     # assets/img/team/xxx.xxx
   email: "hyeonwoo@kist.re.kr"
-  affiliation: "KIST"    # KIST / Korea Univ.
-  interests: ["Proton conductors", "Microkinetics"]   # short words
+  affiliation: ""
+  Korea Institute of Science and Technology (KIST)<br>
+  Korea University (Korea Univ)"    # KIST / Korea Univ.
+  interests: ["Proton conductors", "Large area PCFC/PCEC fabrication Process"]   # short words
   scholar_url: ""  # if available, e.g., https://scholar.google.co.kr/citations?user=VNAIDFkAAAAJ&hl=en
   bio: " 
     <strong>Education</strong>
     <ul>
-      <li>PhD in Materials Science, Caltech (2012-2017)<br>
-        <small><em>with Prof. S.M. Haile</em></small></li>
-      <li>MS in Materials Science & Engineering, Seoul Nat'l Univ. (2007-2009)<br>
-        <small><em>with Prof. H.I. Yoo</em></small></li>
-      <li>BS in Materials Science & Engineering, Seoul Nat'l Univ. (2003-2007)<br></li>
+      <li>PhD in Materials Science & Engineering, Korea Univ (2025-Present)<br>
+        <small><em>with Dr. Ho-il Ji</em></small></li>
+      <li>MS in Materials Science & Engineering, Korea Univ (2023-2024)<br>
+        <small><em>with Dr. Ho-il Ji & Dr. Ji-Won Son</em></small></li>
+      <li>BS in Materials Science & Engineering, Seoul National University of Science and Technology (2015-2022)<br></li>
     </ul>
     <strong>Employment</strong>
     <ul>
-      <li>Principal Researcher, KIST (2022-Present)</li>
-      <li>Senior Researcher, KIST (2018-2021)</li>
-      <li>Researcher, KIST (2009-2017)</li>
-      <li>Associate Prof., UST (2018-Present)</li>
-      <li>Predoc. Scholar, Northwestern Univ. (2015-2017)</li>
+      <li>student intern, KIST (2021.09-2022.09)</li>
     </ul>
   "
   
