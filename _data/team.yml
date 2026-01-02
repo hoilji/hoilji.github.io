@@ -56,7 +56,7 @@
     </ul>
 
 - group: "Researchers"
-  name: "SeulChan Kim"
+  name: "Seulchan Kim (김슬찬)"
   role: "MS Intern"
   photo: "seulchan.jpg"
   email: "ksch2@kist.re.kr"
@@ -75,7 +75,7 @@
 
 
 - group: "Students"
-  name: "HyeonWoo Kim"
+  name: "Hyeonwoo Kim (김현우)"
   role: "PhD Student"
   photo: "hyeonwoo.jpg"
   email: "hyeonwoo@kist.re.kr"
@@ -97,7 +97,7 @@
     </ul>
 
 - group: "Students"
-  name: "DoGeun Yoon"
+  name: "Dogeun Yoon (윤도근)"
   role: "MS Student"
   photo: "dogeun.jpg"
   email: "124515@kist.re.kr"
@@ -119,7 +119,7 @@
     </ul>
 
 - group: "Students"
-  name: "MinCheol Kim"
+  name: "Mincheol Kim (김민철)"
   role: "MS student"
   photo: "mincheol.jpg"
   email: "kmc5387@kist.re.kr"
@@ -135,7 +135,7 @@
     </ul>
 
 - group: "Students"
-  name: "MinJi Kang"
+  name: "Minji Kang (강민지)"
   role: "MS Student"
   photo: "minji.jpg"
   email: "125001@kist.re.kr"
@@ -151,7 +151,7 @@
     </ul>
   
 - group: "Alumni"
-  name: "Junseok Kim"
+  name: "Junseok Kim (김준석)"
   role: "MS / PhD Student (2018 - 2023)"
   photo: "junsuek.jpg"
   email: ""
@@ -160,16 +160,16 @@
   scholar_url: "https://scholar.google.co.kr/citations?hl=ko&user=o4rA1L8AAAAJ"
 
 - group: "Alumni"
-  name: "Wan-Jae Lee"
+  name: "Wan-Jae Lee (이완재)"
   role: "MS Student (2020 - 2022)"
   photo: "wanjae.png"
   email: ""
   affiliation: ""
   interests: ["PCFC buffer layer", "Cr poisoning"]
-  scholar_url: "https://scholar.google.co.kr/citations?hl=ko&user=o4rA1L8AAAAJ"
+  scholar_url: ""
 
 - group: "Alumni"
-  name: "Joonhwan Kim"
+  name: "Joonhwan Kim (김준환)"
   role: "MS Student (2019 - 2020)"
   photo: "junhwan.jpg"
   email: ""
@@ -178,7 +178,7 @@
   scholar_url: ""
 
 - group: "Alumni"
-  name: "Seunghyeok Im"
+  name: "Seunghyeok Im (임승혁)"
   role: "MS Student (2019 - 2020)"
   photo: "seonghuk.jpg"
   email: ""
