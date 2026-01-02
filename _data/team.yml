@@ -63,7 +63,7 @@
   - group: "Researchers"    # Researchers, Students, Alumni
   name: "SeulChan Kim"    # Ho-Il Ji (지호일)
   role: "M.S Intern"  # PostDoc, MS/PhD Student, PhD Student, MS Student
-  photo: "aaa.jpg"     # assets/img/team/xxx.xxx
+  photo: "seulchan.jpg"     # assets/img/team/xxx.xxx
   email: "ksch2@kist.re.kr"
   affiliation: "Korea Institute of Science and Technology (KIST)"    # KIST / Korea Univ.
   interests: ["Solid State Ionics", "Triple-Conducting Oxides"]   # short words
@@ -118,7 +118,7 @@
 - group: "Students"    # Researchers, Students, Alumni
   name: "HyeonWoo Kim"    # Ho-Il Ji (지호일)
   role: "PhD Student"  # PostDoc, MS/PhD Student, PhD Student, MS Student
-  photo: "증명사진.jpg"     # assets/img/team/xxx.xxx
+  photo: "hyeonwoo.jpg"     # assets/img/team/xxx.xxx
   email: "hyeonwoo@kist.re.kr"
   affiliation: "Korea Institute of Science and Technology (KIST)<br>Korea University (Korea Univ)"    # KIST / Korea Univ.
   interests: ["Proton conductors", "Large area PCFC/PCEC fabrication Process"]   # short words
