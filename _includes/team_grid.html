@@ -19,19 +19,19 @@
         {%- if person.affiliation and person.affiliation != "" -%}
           <div class="team-affil">{{ person.affiliation }}</div>
         {%- endif -%}
-
-        {% if person.scholar_url and person.scholar != "" -%}
-          <div class="team-links">
-            <a href="{{ person.scholar_url }}">Google Scholar</a>
-          </div>
-        {% endif %}
         
         {%- if person.email and person.email != "" -%}
           <div class="team-email">
             <a href="mailto:{{ person.email }}">{{ person.email }}</a>
           </div>
         {%- endif -%}
-
+        
+        {% if person.scholar_url and person.scholar != "" -%}
+          <div class="team-links">
+            <a href="{{ person.scholar_url }}">Google Scholar</a>
+          </div>
+        {% endif %}
+       
         {%- if person.interests and person.interests.size > 0 -%}
           <div class="team-tags">
             {%- for t in person.interests -%}
