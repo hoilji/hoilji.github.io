@@ -5,15 +5,15 @@
   photo: "hiji.jpg"          # assets/img/team/hiji.jpg
   email: "hoilji@kist.re.kr"
   interests: ["PCFC/PCEC", "Solid State Ionics", "Ceramic Process"]
-  affiliation: "
-  Korea Institute of Science and Technology (KIST)
-  University of Science and Technology (UST)"
+  affiliation: |
+  "Korea Institute of Science and Technology (KIST)"
+  "University of Science and Technology (UST)"
   bio: "
-    #### Education
+    Education
   <ul>
-    <li>PhD  Materials Science  /  California Institute of Science and Technology (2012-2017)   with Prof. Sossina M. Haile</li>
-    <li>MS  Materials Science & Engineering  /  Seoul National University (2007-2009)</li>
-    <li>BS  Materials Science & Engineering  /  Seoul National University (2003-2007)  </li>
+    <li>PhD in Materials Science, Caltech (2012-2017)</li>
+    <li>MS in Materials Science & Engineering, Seoul Nat'l Univ. (2007-2009)</li>
+    <li>BS in Materials Science & Engineering, Seoul Nat'l Univ. (2003-2007)</li>
   </ul>
   
   짧은 소개/연구요약을 여기에 길게 써도 됩니다. 이 페이지에서 전부 보여줄 거라면 3~6문장 정도가 보기 좋아요."
