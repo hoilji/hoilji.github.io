@@ -3,6 +3,7 @@
   role: "PI / Principal Researcher"
   group: "Faculty"
   photo: "hiji.jpg"          # assets/img/team/hiji.jpg
+  email: "hiji@kist.re.kr"
   interests: ["PCFC/PCEC", "Solid State Ionics", "Ceramic Process"]
   affiliation: "
   Korea Institute of Science and Technology (KIST)<br>
@@ -29,8 +30,6 @@
   <ul>
     <li>Office: L3426, KIST</li>
     <li>Phone: 82-2-958-5521</li>
-    <li>Email: hiji@kist.re.kr</li>
-    <li>[Google Scholar profile](https://scholar.google.co.kr/citations?user=VNAIDFkAAAAJ&hl=en)</li>
   </ul>
   "
 
