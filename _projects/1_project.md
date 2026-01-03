@@ -1,7 +1,7 @@
 ---
 layout: page
 title: overview
-description: Generalized issues on ceramic electrochemical cells
+description: General issues on ceramic electrochemical cells
 img: assets/img/project_overview.png
 importance: 1
 category: work
@@ -9,7 +9,7 @@ category: work
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/overview_1.png" title="SOC_schematic" class="img-fluid z-depth-1" %}
+        {% include figure.html path="assets/img/overview_1.png" title="SOC_schematic" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
