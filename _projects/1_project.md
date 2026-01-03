@@ -9,7 +9,7 @@ category: work
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/overview_1.png" title="SOC_schematic"  %}
+        {% include figure.html path="assets/img/overview_1.png" title="SOC_schematic" class="img-fluid z-depth-1" %}
     </div>
 </div>
 
