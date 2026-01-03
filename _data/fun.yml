@@ -1,10 +1,30 @@
+- file: 251202 10x10 PCEC setup.jpg
+  caption: "10x10 PCEC setup (2025.12)"
+  date: "2025-12-02"
+
 - file: 1000033817.jpg
   caption: "2025 Fall Conference of the Korean Ceramic Society (2025.10)"
   date: "2025-10-15"
 
-- file: together.jpg
+- file: 250916 KIST 안전보건의날.jpg
+  caption: "KIST Safety and Health Day (2025.09)"
+  date: "2025-09-16"
+
+- file: 250828 팀 회식후.jpg
+  caption: "After Team Dinner (2025.08)"
+  date: "2025-08-28"
+
+- file: 250411 체육대회.jpg
   caption: "athletic meeting (2025.08)"
   date: "2025-08-20"
+
+- file: 250730 과제 미팅.jpg
+  caption: "Project meeting (2025.07)"
+  date: "2025-07-30"
+
+- file: 250605 야구장.jpg
+  caption: "Watching a baseball game (2025.06)"
+  date: "2025-06-05"
 
 - file: 250418 우수포스터 윤도근.jpg
   caption: "Best Poster Award_Dogeun (2025.04)"
@@ -17,6 +37,74 @@
 - file: 250418 우수발표 줄리안.png
   caption: "Best Presentation Award_Julian (2025.04)"
   date: "2025-04-18"
+
+- file: 250416 줄리안 발표.jpg
+  caption: "Julian’s oral presentation (2025.04)"
+  date: "2025-04-16"
+
+- file: 250408 팀회식.jpg
+  caption: "Team Dinner (2025.04)"
+  date: "2025-04-08"
+
+- file: 250404 야구장.jpg
+  caption: "Watching a baseball game (2025.04)"
+  date: "2025-04-04"
+
+- file: 240223 석사과정 김현우 졸업.JPG
+  caption: "Hyeonwoo's MS graduation (2025.02)"
+  date: "2025-02-23"
+
+- file: 250114_스키장.jpg
+  caption: "Winter MT at a ski resort (2025.01)"
+  date: "2025-01-14"
+
+- file: 241017 금오공대와 회식.jpg
+  caption: "Dinner with Professor Sihyuk Choi’s team from Kumoh National Institute of Technology (2024.10)"
+  date: "2024-10-17"
+
+- file: 241016 추계 세라믹학회.jpg
+  caption: "2024 Fall Conference of the Korean Ceramic Society (2024.10)"
+  date: "2024-10-16"
+
+- file: 240912 KIST CPR 교육.jpg
+  caption: "KIST CPR Training (2024.09)"
+  date: "2024-09-12"
+
+- file: 240826 여름 MT.jpg
+  caption: "kist summer MT (2024.08)"
+  date: "2024-08-26"
+
+- file: 240404 KIST 연못.jpg
+  caption: "At the KIST pond with cherry blossoms (2024.04)"
+  date: "2024-04-04"
+
+- file: 240307 배터리팀과 회식.jpg
+  caption: "Dinner with the battery team (2024.03)"
+  date: "2024-03-07"
+
+- file: 240223 박사과정 김준석 졸업.jpg
+  caption: "Junseok's PhD graduation (2024.02)"
+  date: "2024-02-23"
+
+- file: 240220 마틴교수님 방문.jpg
+  caption: "Dinner with Prof. Martin (2024.02)"
+  date: "2024-02-20"
+
+- file: 240213 팀회식.jpg
+  caption: "Team Dinner (2024.02)"
+  date: "2024-02-13"
+
+- file: 240130 이완재 졸업.jpg
+  caption: "Wan-Jae's MS graduation (2024.01)"
+  date: "2024-01-30"
+
+- file: 240129 석사과정 이완재 졸업.jpg
+  caption: "Wan-Jae's MS graduation (2024.01)"
+  date: "2024-01-29"
+
+- file: 240117 KIST에서.jpg
+  caption: "kist in winter (2024.01)"
+  date: "2024-01-17"
 
 - file: 231020 우수포스터 김슬찬.jpg
   caption: "Best Poster Award_Seulchan (2023.10)"
