@@ -2,7 +2,13 @@
 layout: page
 title: Research
 permalink: /research/
-description: "
+description: 
+
+nav: true
+nav_order: 1
+display_categories: [work, fun]
+horizontal: false
+---
 We conduct research on ceramic-based energy conversion technologies, with a particular focus on the utilization and production of green hydrogen, as well as the utilization and synthesis of hydrogen storage compounds.<br>
 Our work centers on understanding and improving the intrinsic properties of oxygen-ion and proton-conducting ceramic electrolytes and ceramic electrodes where electrochemical reactions occur, while simultaneously realizing ideal architectures required for practical devices.<br>
 Grounded in solid foundations of solid state ionics, kinetics, solid-state electrochemistry, and ceramic processing, we pursue research that directly links theory with experimental validation and commercialization-level implementation.<br>
@@ -12,13 +18,7 @@ Our goal is to develop reproducible and scalable technologies that bridge fundam
 이를 위해 산소이온 및 수소이온 전도성 세라믹 전해질과 전기화학 반응이 일어나는 세라믹 전극 소재의 고유 물성을 이해하고 향상시키는 동시에, 실제 소자에서 요구되는 각 구성요소의 최적 구조 설계를 구현하는 데 집중하고 있습니다.<br>
 우리는 고체이온공학, 반응 동역학, 고체전기화학, 세라믹 공정에 기반한 탄탄한 학문적 토대 위에서, 이론적 이해를 실험적으로 검증하고 실제 소자로 확장하는 연구를 수행합니다.<br>
 이를 통해 재현 가능하며 상용화 가능한 기술로 이어질 수 있는, science와 technology를 직접적으로 연결하는 연구를 지향합니다.
-"
 
-nav: true
-nav_order: 1
-display_categories: [work, fun]
-horizontal: false
----
 
 <!-- pages/projects.md -->
 <div class="projects">
