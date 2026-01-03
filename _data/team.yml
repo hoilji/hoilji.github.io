@@ -68,20 +68,20 @@
   bio: |
     <strong>Education</strong>
     <ul>
-      <li>MS in Renewable Energy, Korea Univ (2022.09-2024.08)<br>
+      <li>MS in Renewable Energy, Korea Univ (2022-2024)<br>
         <small><em>with Dr. Ho-Il Ji & Dr. Ji-Won Son</em></small></li>
-      <li>BS in Department of Chemistry, Konkuk University (2015.03-2022.02)<br></li>
+      <li>BS in Department of Chemistry, Konkuk University (2015-2022)<br></li>
     </ul>
     <strong>Employment</strong>
     <ul>    
-      <li>MS Intern in KIST (2024.10-present)<br>
+      <li>MS Intern in KIST (2024-present)<br>
         <small><em>with Dr. Ho-Il Ji </em></small></li>
     </ul>
 
 - group: "Students"
   name: "Hyeonwoo Kim (김현우)"
   role: "PhD Student"
-  photo: "증명사진.jpg"
+  photo: "hyeonwoo.jpg"
   email: "hyeonwoo@kist.re.kr"
   affiliation: "Korea Institute of Science and Technology (KIST)<br>Korea University (Korea Univ)"
   interests: ["Proton conductors", "Large area PCFC/PCEC fabrication Process"]
@@ -91,13 +91,13 @@
     <ul>
       <li>PhD in Materials Science & Engineering, Korea Univ (2025.03-Present)<br>
         <small><em>with Dr. Ho-Il Ji</em></small></li>
-      <li>MS in Renewable Energy, Korea Univ (2023.03-2025.02)<br>
+      <li>MS in Renewable Energy, Korea Univ (2023-2025)<br>
         <small><em>with Dr. Ho-Il Ji & Dr. Ji-Won Son</em></small></li>
-      <li>BS in Materials Science & Engineering, Seoul National University of Science and Technology (2015.03-2023.02)<br></li>
+      <li>BS in Materials Science & Engineering, Seoul National University of Science and Technology (2015-2023)<br></li>
     </ul>
     <strong>Employment</strong>
     <ul>
-      <li>student intern, KIST (2021.09-2022.09)</li>
+      <li>student intern, KIST (2021-2022)</li>
     </ul>
 
 - group: "Students"
@@ -113,13 +113,13 @@
   bio: |
     <strong>Education</strong>
     <ul>
-      <li>MS in Department of Mechanical Engineering, Yeonsei Univ (2024.09-Present)<br>
+      <li>MS in Department of Mechanical Engineering, Yeonsei Univ (2024-Present)<br>
         <small><em>with Dr. Ho-Il Ji</em></small></li>
-      <li>BS in Department of Mechanical Engineering, Seoul National University of Science and Technology (2016.03-2024.08)<br></li>
+      <li>BS in Department of Mechanical Engineering, Seoul National University of Science and Technology (2016-2024)<br></li>
     </ul>
     <strong>Employment</strong>
     <ul>
-      <li>student intern, KIST (2023.09-2024.08)</li>
+      <li>student intern, KIST (2023-2024)</li>
     </ul>
 
 - group: "Students"
@@ -133,13 +133,13 @@
   bio: |
     <strong>Education</strong>
     <ul>
-      <li>MS in Renewable Energy, Korea Univ (2024.03-2026.02)<br>
+      <li>MS in Renewable Energy, Korea Univ (2024-2026)<br>
         <small><em>with Dr. Ho-Il Ji & Dr. Ji-Won Son</em></small></li>
-      <li>BS in Department of Chemistry, Hannam University (2018.03-2024.02)<br></li>
+      <li>BS in Department of Chemistry, Hannam University (2018-2024)<br></li>
     </ul>
     <strong>Employment</strong>
     <ul>    
-      <li>MS Intern in KIST (2026.03-present)<br>
+      <li>MS Intern in KIST (2026-present)<br>
         <small><em>with Dr. Ho-Il Ji </em></small></li>
     </ul>
 
@@ -154,9 +154,9 @@
   bio: |
     <strong>Education</strong>
     <ul>
-      <li>MS in Materials Science & Engineering, Korea Univ (2025.03-present)<br>
+      <li>MS in Materials Science & Engineering, Korea Univ (2025-present)<br>
         <small><em>with Dr. Ho-Il Ji </em></small></li>
-      <li>BS in Department of Chemical Engineering, Soongsil University (2018.03-2023.02)<br></li>
+      <li>BS in Department of Chemical Engineering, Soongsil University (2018-2023)<br></li>
     </ul>
   
 - group: "Alumni"
@@ -170,9 +170,9 @@
 
 - group: "Alumni"
   name: "Wan-Jae Lee (이완재)"
-  role: "MS Student (2020 - 2022)"
+  role: "MS Student (2020 - 2023)"
   photo: "wanjae.png"
-  email: ""
+  email: "jskim1@kmu.ac.kr"
   affiliation: ""
   interests: ["PCFC buffer layer", "Cr poisoning"]
   scholar_url: ""
