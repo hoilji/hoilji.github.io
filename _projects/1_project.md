@@ -2,10 +2,17 @@
 layout: page
 title: overview
 description: Generalized issues on ceramic electrochemical cells
-img: assets/img/project_overview.jpg
+img: assets/img/project_overview.png
 importance: 1
 category: work
 ---
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/overview_1.png" title="SOC_schematic" class="z-depth-1" %}
+    </div>
+</div>
+
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
