@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Research projects
+title: Research Projects
 description: 
 img:
 importance: 3
