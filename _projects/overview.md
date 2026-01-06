@@ -48,8 +48,9 @@ Key challenges include large-area cell fabrication, stack development, and long-
      </p>
 <hr class="divider">
  <br>
-    <p> <h5>본 연구단(SSEMS)에서 연구 중인 고체산화물 전기화학 디바이스는 아래와 같습니다.<br></h5>
+    <p> <h5>본 연구단(SSEMS)에서 연구 중인 고체산화물 전기화학 디바이스는 아래와 같습니다.</h5>
          </p>
+     <br>
     <h6>Solid Oxide Fuel Cell (SOFC)</h6>
     <p>
 SOFC는 전해질과 전극에 세라믹 소재를 사용하는 고온형 연료전지입니다.
