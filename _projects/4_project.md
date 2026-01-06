@@ -1,15 +1,37 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: Research projects
+description: 
 img:
 importance: 3
 category: project
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<large><strong> Ongoing Projects </strong></large>
+
+<div class="row align-items-center my-4">
+  <!-- Left: Image (1/4) -->
+  <div class="col-md-3 text-center">
+    {% include figure.html 
+      path="assets/img/logo/NRF.png" 
+      class="img-fluid rounded z-depth-1"
+    %}
+  </div>
+
+  <!-- Right: Text (3/4) -->
+  <div class="col-md-9">
+    <h4>Section title</h4>
+    <p>
+사업명: 무탄소에너지핵심기술개발>무탄소에너지핵심기술개발<br>
+과제명: 인공지능을 활용한 초고전도/초전하 신규소재 기반 PCFC 핵심 요소기술 개발<br>
+역할: 총괄 (연구책임:지호일)
+기간: 2025. 04. 01 ~ 2029. 12. 31 
+    </p>
+  </div>
+</div>
+
+
+
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
