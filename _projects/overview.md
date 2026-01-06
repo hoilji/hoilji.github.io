@@ -48,7 +48,7 @@ Key challenges include large-area cell fabrication, stack development, and long-
      </p>
 <hr class="divider">
  <br>
-    <p> <h5>본 연구단(SSEMS)에서 연구 중인 고체산화물 전기화학 디바이스는 크게 아래와 같이 구분할 수 있습니다.<br></h5>
+    <p> <h5>본 연구단(SSEMS)에서 연구 중인 고체산화물 전기화학 디바이스는 아래와 같습니다.<br></h5>
          </p>
     <h6>Solid Oxide Fuel Cell (SOFC)</h6>
     <p>
@@ -76,6 +76,6 @@ SOEC 대비 낮은 열 요구량으로도 높은 효율의 수소 생산이 가�
 </p>
  <p>
 <h5>SOFC/SOEC와 PCFC/PCEC는 기본적인 셀 구조와 작동 원리가 매우 유사합니다. 그러나 두 계열은 전해질을 통해 주로 이동하는 이온종(산소이온 vs. 프로톤)이 다르며, 그에 따라 소재의 화학적 안정성과 반응성뿐 아니라 전극에서의 전기화학 반응 경로와 지배 반응 단계까지 달라집니다. 따라서 소재 선택, 전극 설계, 운전 조건 최적화 등에서 추가로 고려해야 할 요소가 많습니다.
-<strong>본 연구팀은 SSEMS 연구단 소속으로 SOFC/SOEC 연구 경험을 기반으로, 차세대 고체산화물 전기화학 기술인 PCFC 및 PCEC 연구에 집중하고 있습니다.</strong></h5><br>
+<strong>본 연구팀은 SSEMS 연구단 소속으로서, SOFC/SOEC 연구 경험을 기반으로 차세대 고체산화물 전기화학 기술인 PCFC 및 PCEC 연구에 집중하고 있습니다.</strong></h5><br>
      </p>
 </div>
