@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Research Projects
-description: 
-img:
+title: Projects
+description: Ongoing and completed research projects
+img:assets/img/3.jpg
 importance: 3
 category: project
 ---
