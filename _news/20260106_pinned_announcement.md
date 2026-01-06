@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Announcement: Recruiting (2026)"
+title: "Announcement: Recruiting (2026) [link]"
 date: 2026-01-06
 pinned: true
 ---
