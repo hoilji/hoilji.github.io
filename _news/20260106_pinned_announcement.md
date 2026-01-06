@@ -6,8 +6,8 @@ pinned: true
 ---
 <div>
 본 연구팀에서 학생 및 연구원을 모집합니다.<br>
-세계 최고 수준의 차세대 연료전지 및 수전해 전지 연구를 진행할 분들의 많은 지원 바랍니다.<br>
- <br>
+세계 최고 수준의 차세대 연료전지 및 수전해 전지 연구에 관심있는 분들의 많은 지원 바랍니다.<br>
+<br>
 모집분야:
     <ul>
       <li>(1) 프로톤 전도성 세라믹 연료전지 신규 전해질/전극 소재 개발</li>
@@ -22,8 +22,8 @@ pinned: true
  <br>
 참고:
     <ul>
-      <li><a href="https://kist.re.kr/ko/notice/recruiting-students.do?mode=view&articleNo=1994&article.offset=0&articleLimit=10">학생 프로그램 소개 (link)</a></li>
       <li>학위과정 근무 및 학업 형태: 고려대, 한양대, 연세대, UST 등 KIST와 협력 협정을 체결한 대학에서 학생 등록 및 기본교과목을 이수하고, KIST에서 학위논문연구를 수행 후 해당 협력 학교 학위 수여</li>
+      <li><a href="https://kist.re.kr/ko/notice/recruiting-students.do?mode=view&articleNo=1994&article.offset=0&articleLimit=10">학생 프로그램 소개 (link)</a></li>
       <li><a href="http://ssems.dsso.kr/">SSEMS team 홈페이지 (link)</a></li>
     </ul>
  <br>
