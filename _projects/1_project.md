@@ -15,7 +15,7 @@ category: research topic
 </div>
 
 <div>
-<h4>Solid Oxide Fuel Cell (SOFC)</h4>
+    <h4>Solid Oxide Fuel Cell (SOFC)</h4>
     <p>
 SOFC is a high-temperature fuel cell that uses ceramic components as the electrolyte and electrodes.
 Operating above 700 °C, it offers high electrical efficiency, fuel flexibility, and excellent suitability for combined heat and power systems.
@@ -31,7 +31,7 @@ Current research focuses on durability, thermal management, and system integrati
 </p>
  <br>
  
-<h4>Proton-Conducting Fuel Cell (PCFC)</h4>
+    <h4>Proton-Conducting Fuel Cell (PCFC)</h4>
 <p>
 PCFC employs proton-conducting ceramic electrolytes and operates at intermediate temperatures below 600 °C.
 It combines the advantages of high efficiency, reduced degradation, and the ability to use dry fuels without external humidification.
@@ -39,7 +39,7 @@ PCFC is an emerging technology with strong potential, while material stability, 
 </p>
  <br>
  
-<h4>Proton-Conducting Electrolysis Cell (PCEC)</h4>
+    <h4>Proton-Conducting Electrolysis Cell (PCEC)</h4>
 <p>
 PCEC is the electrolysis counterpart of PCFC, producing hydrogen through proton transport at intermediate temperatures.
 It enables highly efficient hydrogen production with lower thermal requirements compared to SOEC and can directly generate dry hydrogen.
