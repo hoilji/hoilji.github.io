@@ -4,7 +4,7 @@ title: research area
 description: Solid oxide electrochemical cells
 img: assets/img/project_overview.png
 importance: 1
-category: research topic
+category: our research
 ---
 
 <div class="row">
