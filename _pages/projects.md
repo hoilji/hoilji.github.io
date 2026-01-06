@@ -6,7 +6,7 @@ description:
 
 nav: true
 nav_order: 1
-display_categories: [research topic, project]
+display_categories: [our research, project]
 horizontal: false
 ---
 We conduct research on ceramic materials–based energy conversion technologies, with a particular focus on the utilization and production of clean hydrogen, as well as the utilization and synthesis of hydrogen storage compounds. 
