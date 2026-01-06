@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 description: Ongoing and completed research projects
-img:assets/img/3.jpg
+img: assets/img/3.jpg
 importance: 3
 category: project
 ---
