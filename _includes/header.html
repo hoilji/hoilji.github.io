@@ -6,15 +6,21 @@
         <div class="container">
           {% if page.permalink != '/' -%}
     <a class="navbar-brand" href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/img/logo/logo_teamji.png' | relative_url }}"
-           alt="Team JI"
-           style="height:32px; width:auto; display:block;">
+        <img class="site-logo"
+             src="{{ '/assets/img/logo/logo_teamji.png' | relative_url }}"
+             data-logo-light="{{ '/assets/img/logo/logo_teamji.png' | relative_url }}"
+             data-logo-dark="{{ '/assets/img/logo/logo_teamji_black_bg_clean.png' | relative_url }}"
+             alt="Team JI"
+             style="height:32px; width:auto; display:block;">
     </a>
 {%- else -%}
-  <a class="navbar-brand" href="{{ '/' | relative_url }}">
-    <img src="{{ '/assets/img/logo/logo_teamji.png' | relative_url }}"
-         alt="Team JI"
-         style="height:32px; width:auto; display:block;">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+        <img class="site-logo"
+             src="{{ '/assets/img/logo/logo_teamji.png' | relative_url }}"
+             data-logo-light="{{ '/assets/img/logo/logo_teamji.png' | relative_url }}"
+             data-logo-dark="{{ '/assets/img/logo/logo_teamji_black_bg_clean.png' | relative_url }}"
+             alt="Team JI"
+             style="height:32px; width:auto; display:block;">
     </a>
             
   {%- if site.enable_navbar_social -%}
