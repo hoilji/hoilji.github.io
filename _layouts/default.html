@@ -32,5 +32,38 @@
     {% include scripts/mathjax.html %}
     {% include scripts/analytics.html %}
     {% include scripts/progressBar.html %}
+
+    {% include scripts/progressBar.html %}
+
+    <script>
+      function setLogoByTheme() {
+        const isDark =
+          document.documentElement.classList.contains('dark') ||
+          document.documentElement.classList.contains('theme-dark') ||
+          document.body.classList.contains('dark') ||
+          document.body.classList.contains('theme-dark');
+
+        document.querySelectorAll('img.site-logo').forEach(img => {
+          const light = img.getAttribute('data-logo-light');
+          const dark  = img.getAttribute('data-logo-dark');
+          img.src = isDark ? dark : light;
+        });
+      }
+
+      // 최초 1회
+      document.addEventListener('DOMContentLoaded', setLogoByTheme);
+
+      // 토글 버튼 클릭 시 (테마 class 토글 이후 반영되도록)
+      const toggleBtn = document.getElementById('light-toggle');
+      if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => setTimeout(setLogoByTheme, 0));
+      }
+
+      // class 변경 감지 (테마 스크립트가 다른 방식으로 바꿔도 대응)
+      const obs = new MutationObserver(setLogoByTheme);
+      obs.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+      obs.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    </script>
   </body>
-</html>
+</html>  
+  
