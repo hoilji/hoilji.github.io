@@ -10,7 +10,13 @@
            alt="Team JI"
            style="height:32px; width:auto; display:block;">
     </a>
-        {%- if site.enable_navbar_social -%}
+        {%- elsif site.enable_navbar_social -%}
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/img/logo/logo_teamji.png' | relative_url }}"
+           alt="Team JI"
+           style="height:32px; width:auto; display:block;">
+    </a>
+            
             <!-- Social Icons -->
             <div class="navbar-brand social">
                 {% include social.html %}
