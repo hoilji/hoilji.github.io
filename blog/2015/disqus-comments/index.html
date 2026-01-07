@@ -359,34 +359,55 @@ Last updated: January 07, 2026.
 </script>
 
 
-    <script>
-      function setLogoByTheme() {
-        const isDark =
-          document.documentElement.classList.contains('dark') ||
-          document.documentElement.classList.contains('theme-dark') ||
-          document.body.classList.contains('dark') ||
-          document.body.classList.contains('theme-dark');
+<script>
+  function currentThemeIsDark() {
+    // 1) al-folio가 저장하는 값(가장 우선)
+    const saved = localStorage.getItem("theme"); // "dark" | "light" | "system" | null
+    if (saved === "dark") return true;
+    if (saved === "light") return false;
 
-        document.querySelectorAll('img.site-logo').forEach(img => {
-          const light = img.getAttribute('data-logo-light');
-          const dark  = img.getAttribute('data-logo-dark');
-          img.src = isDark ? dark : light;
-        });
-      }
+    // 2) 혹시 data-theme / data-mode 같은 attribute 쓰는 경우까지 대응
+    const dt = document.documentElement.getAttribute("data-theme")
+           || document.body.getAttribute("data-theme")
+           || document.documentElement.getAttribute("data-mode")
+           || document.body.getAttribute("data-mode");
+    if (dt === "dark") return true;
+    if (dt === "light") return false;
 
-      // 최초 1회
-      document.addEventListener('DOMContentLoaded', setLogoByTheme);
+    // 3) system(또는 저장값이 없을 때): OS 설정 따라가기
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
 
-      // 토글 버튼 클릭 시 (테마 class 토글 이후 반영되도록)
-      const toggleBtn = document.getElementById('light-toggle');
-      if (toggleBtn) {
-        toggleBtn.addEventListener('click', () => setTimeout(setLogoByTheme, 0));
-      }
+  function setLogoByTheme() {
+    const isDark = currentThemeIsDark();
+    document.querySelectorAll("img.site-logo").forEach(img => {
+      const light = img.getAttribute("data-logo-light");
+      const dark  = img.getAttribute("data-logo-dark");
+      img.src = isDark ? dark : light;
+    });
+  }
 
-      // class 변경 감지 (테마 스크립트가 다른 방식으로 바꿔도 대응)
-      const obs = new MutationObserver(setLogoByTheme);
-      obs.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-      obs.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-    </script>
+  // 최초 1회
+  document.addEventListener("DOMContentLoaded", setLogoByTheme);
+
+  // 토글 버튼 클릭 시: al-folio 스크립트가 localStorage를 업데이트한 다음 반영되도록 약간 딜레이
+  const toggleBtn = document.getElementById("light-toggle");
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => setTimeout(setLogoByTheme, 50));
+  }
+
+  // system 테마일 때 OS 테마 변경도 추적
+  const mq = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
+  if (mq && mq.addEventListener) mq.addEventListener("change", setLogoByTheme);
+
+  // 다른 코드가 attribute를 바꾸는 경우도 추적
+  const obs = new MutationObserver(setLogoByTheme);
+  obs.observe(document.documentElement, { attributes: true });
+  obs.observe(document.body, { attributes: true });
+
+  // 혹시 테마 스크립트가 늦게 로드/적용되는 경우 대비: 짧게 1번 더
+  window.addEventListener("load", () => setTimeout(setLogoByTheme, 50));
+</script>
+
   </body>
 </html>
