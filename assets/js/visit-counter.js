@@ -1,6 +1,7 @@
 (() => {
-  const NAMESPACE = "hoilji-site";   // 너만의 문자열로 바꾸기 (예: username, repo 등)
-  const NAME = "site-visits";        // 카운터 이름
+  const NAMESPACE = "hoilji-site";
+  const NAME = "site-visits";
+  const DEBUG = true;
 
   function todaySeoul() {
     return new Intl.DateTimeFormat("en-CA", {
@@ -8,37 +9,47 @@
       year: "numeric",
       month: "2-digit",
       day: "2-digit",
-    }).format(new Date()); // YYYY-MM-DD
+    }).format(new Date());
   }
 
-  async function fetchCount(url) {
+  async function fetchJson(url) {
     const r = await fetch(url, { cache: "no-store" });
     const data = await r.json();
-    if (typeof data?.count !== "number") throw new Error("No count");
-    return data.count;
+    return data;
   }
 
   async function run() {
     const el = document.getElementById("visit-counter-value");
-    if (!el) return;
+    if (!el) {
+      if (DEBUG) console.error("[counter] #visit-counter-value not found");
+      return;
+    }
+
+    el.textContent = "…"; // JS가 실행됐는지 바로 보이게
 
     const today = todaySeoul();
     const last = localStorage.getItem("connect_time");
 
-    const upUrl  = `https://api.counterapi.dev/v1/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(NAME)}/up`;
-    const getUrl = `https://api.counterapi.dev/v1/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(NAME)}`;
+    const base = `https://api.counterapi.dev/v1/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(NAME)}`;
+    const upUrl = `${base}/up`;
+    const getUrl = `${base}/`;
 
     try {
-      let v;
+      let data;
       if (last !== today) {
-        v = await fetchCount(upUrl);                 // 오늘 첫 방문이면 +1
+        data = await fetchJson(upUrl);
         localStorage.setItem("connect_time", today);
       } else {
-        v = await fetchCount(getUrl);                // 같은 날이면 조회만
+        data = await fetchJson(getUrl);
       }
-      el.textContent = v.toLocaleString();
+
+      if (typeof data?.count !== "number") throw new Error("No count in response");
+      el.textContent = data.count.toLocaleString();
+
+      if (DEBUG) console.log("[counter] ok:", data);
     } catch (e) {
-      el.textContent = "—";
+      if (DEBUG) console.error("[counter] failed:", e);
+      el.textContent = "-";
     }
   }
 
