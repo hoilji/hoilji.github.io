@@ -1059,4 +1059,15 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   margin-top: 2.5rem;
 }
 
+.footer-counter {
+  font-size: 11px;
+  opacity: 0.65;
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+.footer-counter #visit-counter-value {
+  font-variant-numeric: tabular-nums;
+}
+
 /*# sourceMappingURL=main.css.map */
