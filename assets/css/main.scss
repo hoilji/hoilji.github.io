@@ -165,5 +165,6 @@ $max-content-width: {{ site.max_width }};
 }
 
 .footer-counter #visit-counter-value{
+    color: #fff !important;
   font-variant-numeric: tabular-nums;
 }
