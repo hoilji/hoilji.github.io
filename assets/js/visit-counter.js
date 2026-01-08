@@ -1,6 +1,6 @@
 (() => {
-  const WORKSPACE = "hoilji-github-pages"; // 너만의 유니크한 문자열로 변경
-  const COUNTER_NAME = "site-visits";
+  const NAMESPACE = "hoilji-site";   // 너만의 문자열로 바꾸기 (예: username, repo 등)
+  const NAME = "site-visits";        // 카운터 이름
 
   function todaySeoul() {
     return new Intl.DateTimeFormat("en-CA", {
@@ -11,11 +11,11 @@
     }).format(new Date()); // YYYY-MM-DD
   }
 
-  function pickValue(result) {
-    // CounterAPI 결과에서 숫자 뽑기(버전 차이 대비)
-    if (result && typeof result.value === "number") return result.value;
-    if (result && result.data && typeof result.data === "number") return result.data;
-    return null;
+  async function fetchCount(url) {
+    const r = await fetch(url, { cache: "no-store" });
+    const data = await r.json();
+    if (typeof data?.count !== "number") throw new Error("No count");
+    return data.count;
   }
 
   async function run() {
@@ -25,20 +25,18 @@
     const today = todaySeoul();
     const last = localStorage.getItem("connect_time");
 
-    try {
-      // CounterAPI 브라우저 클라이언트 (공식 예시와 동일한 방식) :contentReference[oaicite:4]{index=4}
-      const counter = new Counter({ workspace: WORKSPACE });
+    const upUrl  = `https://api.counterapi.dev/v1/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(NAME)}/up`;
+    const getUrl = `https://api.counterapi.dev/v1/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(NAME)}`;
 
-      let result;
+    try {
+      let v;
       if (last !== today) {
-        result = await counter.up(COUNTER_NAME);   // 오늘 첫 방문이면 +1 :contentReference[oaicite:5]{index=5}
+        v = await fetchCount(upUrl);                 // 오늘 첫 방문이면 +1
         localStorage.setItem("connect_time", today);
       } else {
-        result = await counter.get(COUNTER_NAME);  // 같은 날이면 조회만 :contentReference[oaicite:6]{index=6}
+        v = await fetchCount(getUrl);                // 같은 날이면 조회만
       }
-
-      const v = pickValue(result);
-      el.textContent = (v === null) ? "—" : v.toLocaleString();
+      el.textContent = v.toLocaleString();
     } catch (e) {
       el.textContent = "—";
     }
