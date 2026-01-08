@@ -1064,6 +1064,7 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   opacity: 0.65;
   margin-left: 6px;
   white-space: nowrap;
+  color: #fff;
 }
 
 .footer-counter #visit-counter-value {
