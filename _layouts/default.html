@@ -23,6 +23,9 @@
     <!-- Footer -->
     {%- include footer.html %}
 
+    <!-- Visitor counter (fixed bottom-right) -->
+    {%- include visit_counter.html %}
+    
     <!-- JavaScripts -->
     {% include scripts/jquery.html %}
     {% include scripts/bootstrap.html %}
@@ -35,6 +38,8 @@
 
     {% include scripts/progressBar.html %}
 
+
+  
 <script>
   function currentThemeIsDark() {
     // 1) al-folio가 저장하는 값(가장 우선)
@@ -85,6 +90,9 @@
   window.addEventListener("load", () => setTimeout(setLogoByTheme, 50));
 </script>
 
+          <!-- Visitor counter script -->
+  <script src="{{ '/assets/js/visit-counter.js' | relative_url }}"></script>
+    
   </body>
 </html>  
   
