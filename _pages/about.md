@@ -11,7 +11,7 @@ profile:
   address: >
     <p><a href="https://kist.re.kr/"><strong>Korea Institute of Science and Technology (KIST)</strong></a><br>
     Hydrogen Energy Materials Research Center<br>
-    <a href="http://ssems.dsso.kr/">Solid State Energy Materials & Systems (SSEMS)</a><br>
+    <a href="https://sites.google.com/view/ssemslab/">Solid State Energy Materials & Systems (SSEMS)</a><br>
      <br>
     (5, Hwarang-ro 14-gil Seongbuk-gu Seoul, 02792 Republic of Korea)</p>
 
