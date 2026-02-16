@@ -79,6 +79,27 @@
         <small><em>with Dr. Ho-Il Ji </em></small></li>
     </ul>
 
+    - group: "Researchers"
+  name: "Mincheol Kim (김민철)"
+  role: "MS Intern"
+  photo: "mincheol.jpg"
+  email: "kmc5387@kist.re.kr"
+  affiliation: "Korea Institute of Science and Technology (KIST)"
+  interests: ["Solid State Ionics", "Triple-Conducting Oxides"]
+  scholar_url: ""
+  bio: |
+    <strong>Education</strong>
+    <ul>
+      <li>MS in Renewable Energy, Korea Univ (2024-2026)<br>
+        <small><em>with Dr. Ho-Il Ji & Dr. Ji-Won Son</em></small></li>
+      <li>BS in Chemistry, Hannam University (2018-2024)<br></li>
+    </ul>
+    <strong>Employment</strong>
+    <ul>    
+      <li>MS Intern in KIST (2026-present)<br>
+        <small><em>with Dr. Ho-Il Ji </em></small></li>
+    </ul>
+
 - group: "Students"
   name: "Hyeonwoo Kim (김현우)"
   role: "PhD Student"
@@ -121,27 +142,6 @@
     <strong>Employment</strong>
     <ul>
       <li>student intern, KIST (2023-2024)</li>
-    </ul>
-
-- group: "Students"
-  name: "Mincheol Kim (김민철)"
-  role: "MS student"
-  photo: "mincheol.jpg"
-  email: "kmc5387@kist.re.kr"
-  affiliation: "Korea Institute of Science and Technology (KIST)"
-  interests: ["Solid State Ionics", "Triple-Conducting Oxides"]
-  scholar_url: ""
-  bio: |
-    <strong>Education</strong>
-    <ul>
-      <li>MS in Renewable Energy, Korea Univ (2024-2026)<br>
-        <small><em>with Dr. Ho-Il Ji & Dr. Ji-Won Son</em></small></li>
-      <li>BS in Chemistry, Hannam University (2018-2024)<br></li>
-    </ul>
-    <strong>Employment</strong>
-    <ul>    
-      <li>MS Intern in KIST (2026-present)<br>
-        <small><em>with Dr. Ho-Il Ji </em></small></li>
     </ul>
 
 - group: "Students"
