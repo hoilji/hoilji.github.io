@@ -1,6 +1,6 @@
 (() => {
   const NAMESPACE = "hoilji-site";
-  const NAME = "site-visits";
+  const NAME = "site-visitss";
   const DEBUG = true;
 
   function todaySeoul() {
@@ -30,7 +30,7 @@
     const today = todaySeoul();
     const last = localStorage.getItem("connect_time");
 
-    const base = `https://api.counterapi.dev/v1/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(NAME)}`;
+    const base = `https://api.counterapi.dev/v2/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(NAME)}`;
     const upUrl = `${base}/up`;
     const getUrl = `${base}/`;
 
