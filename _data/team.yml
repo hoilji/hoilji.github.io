@@ -4,7 +4,6 @@
   role: "PI / Principal Researcher"
   group: "Faculty"
   photo: "hiji.jpg" # assets/img/team/hiji.jpg
-  email: "hiji@kist.re.kr"
   interests: ["PCFC/PCEC", "Solid State Ionics", "Ceramic Process"]
   affiliation: |
     Korea Institute of Science and Technology (KIST)<br>
@@ -31,13 +30,13 @@
     <ul>
       <li>Office: L3426, KIST</li>
       <li>Phone: 82-2-958-5521</li>
+      <li>email: hiji@kist.re.kr</li>
     </ul>
 
 - group: "Researchers"
   name: "Julian Eigen"
   role: "PostDoc"
   photo: "julian.jpg"
-  email: "j.eigen@kist.re.kr"
   affiliation: "Korea Institute of Science and Technology (KIST)"
   interests: ["Solid State Ionics", "Triple-Conducting Oxides"]
   scholar_url: "https://scholar.google.co.kr/citations?user=rf3ewREAAAAJ&hl=ko&oi=ao"
@@ -57,12 +56,15 @@
       <li>Researcher, Forschungzentrum Jülich (2022)</li>
       <li>PreDoc. Scholar, Forschungszentrum Jülich GmbH (2015-2020)</li>
     </ul>
+    <strong>Contact Information</strong>
+    <ul>
+      <li>email: j.eigen@kist.re.kr</li>
+    </ul>
 
 - group: "Researchers"
   name: "Seulchan Kim (김슬찬)"
   role: "MS Intern"
   photo: "seulchan.jpg"
-  email: "ksch2@kist.re.kr"
   affiliation: "Korea Institute of Science and Technology (KIST)"
   interests: ["Solid State Ionics", "Triple-Conducting Oxides"]
   scholar_url: "https://scholar.google.co.kr/citations?user=Hn05gN8AAAAJ&hl=ko&oi=sra"
@@ -78,12 +80,15 @@
       <li>MS Intern in KIST (2024-present)<br>
         <small><em>with Dr. Ho-Il Ji </em></small></li>
     </ul>
+    <strong>Contact Information</strong>
+    <ul>
+      <li>email: ksch2@kist.re.kr</li>
+    </ul>
 
 - group: "Researchers"
   name: "Mincheol Kim (김민철)"
   role: "MS Intern"
   photo: "mincheol.jpg"
-  email: "kmc5387@kist.re.kr"
   affiliation: "Korea Institute of Science and Technology (KIST)"
   interests: ["Solid State Ionics", "Triple-Conducting Oxides"]
   scholar_url: "https://scholar.google.co.kr/citations?hl=ko&user=1p9o0VIAAAAJ"
@@ -99,12 +104,15 @@
       <li>MS Intern in KIST (2026-present)<br>
         <small><em>with Dr. Ho-Il Ji </em></small></li>
     </ul>
+    <strong>Contact Information</strong>
+    <ul>
+      <li>email: kmc5387@kist.re.kr</li>
+    </ul>
 
 - group: "Students"
   name: "Hyeonwoo Kim (김현우)"
   role: "PhD Student"
   photo: "hyeonwoo.jpg"
-  email: "hyeonwoo@kist.re.kr"
   affiliation: "Korea Institute of Science and Technology (KIST)<br>Korea University (Korea Univ)"
   interests: ["Proton conductors", "Large area PCFC/PCEC fabrication Process"]
   scholar_url: "https://scholar.google.co.kr/citations?user=6NbbglUAAAAJ&hl=ko&oi=sra"
@@ -121,12 +129,15 @@
     <ul>
       <li>student intern, KIST (2021-2022)</li>
     </ul>
+    <strong>Contact Information</strong>
+    <ul>
+      <li>email: hyeonwoo@kist.re.kr</li>
+    </ul>
 
 - group: "Students"
   name: "Dogeun Yoon (윤도근)"
   role: "MS Student"
   photo: "dogeun.jpg"
-  email: "124515@kist.re.kr"
   affiliation: |
     Korea Institute of Science and Technology (KIST)<br>
     Yeonsei University (Yeonsei Univ)
@@ -143,12 +154,15 @@
     <ul>
       <li>student intern, KIST (2023-2024)</li>
     </ul>
-
+    <strong>Contact Information</strong>
+    <ul>
+      <li>email: 124515@kist.re.kr</li>
+    </ul>
+    
 - group: "Students"
   name: "Minji Kang (강민지)"
   role: "MS Student"
   photo: "minji.jpg"
-  email: "125001@kist.re.kr"
   affiliation: "Korea Institute of Science and Technology (KIST)<br> Korea University (Korea Univ)"
   interests: ["Proton conductors", "Exsolution"]
   scholar_url: ""
@@ -159,12 +173,15 @@
         <small><em>with Dr. Ho-Il Ji </em></small></li>
       <li>BS in Chemical Engineering, Soongsil University (2018-2023)<br></li>
     </ul>
+    <strong>Contact Information</strong>
+    <ul>
+      <li>email: 125001@kist.re.kr</li>
+    </ul>
   
 - group: "Alumni"
   name: "Junseok Kim (김준석)"
   role: "MS / PhD Student (2018 - 2023)"
   photo: "junsuek.jpg"
-  email: "jskim1@kmu.ac.kr"
   affiliation: "current: Assistant Professor in Keimyung University"
   interests: ["Ceramic Process", "SOFC/PCFC electrolyte"]
   scholar_url: "https://scholar.google.co.kr/citations?hl=ko&user=o4rA1L8AAAAJ"
@@ -200,7 +217,6 @@
   name: "Asif Jan"
   role: "MS Student (2018 - 2019)"
   photo: "asif.jpg"
-  email: "A.Jan@tudelft.nl"
   affiliation: "current: PhD in Delft University of Technology, Netherlands"
   interests: ["Pt/ceria catalyst"]
   scholar_url: "https://scholar.google.com/citations?user=95xz06cAAAAJ&hl=en"
