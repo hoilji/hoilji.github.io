@@ -765,6 +765,56 @@
   <nav class="fun-pagination" aria-label="사진 목록 페이지"></nav>
 </div>
 
+<style>
+/* hidden 속성이 기존 grid CSS에 의해 무시되지 않도록 설정 */
+.fun-item[hidden] {
+  display: none !important;
+}
+
+.fun-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 2rem;
+}
+
+.fun-page-button {
+  min-width: 2.4rem;
+  height: 2.4rem;
+  padding: 0 0.75rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.35rem;
+
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+
+  font: inherit;
+  cursor: pointer;
+}
+
+.fun-page-button:hover:not(:disabled) {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+}
+
+.fun-page-button.is-current {
+  border-color: var(--global-theme-color);
+  background: var(--global-theme-color);
+  color: white;
+  font-weight: 600;
+}
+
+.fun-page-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+</style>
+
+<script>
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const gallery = document.getElementById("fun-gallery-fun");
