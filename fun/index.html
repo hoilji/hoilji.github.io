@@ -766,12 +766,12 @@
 </div>
 
 <style>
-/* 숨겨진 사진은 표시하지 않음 */
+/* 현재 페이지에 포함되지 않는 사진 숨김 */
 .fun-item[hidden] {
   display: none !important;
 }
 
-/* 페이지 번호 영역 */
+/* 페이지 번호 전체 영역 */
 .fun-pagination {
   display: flex;
   justify-content: center;
@@ -779,8 +779,12 @@
   flex-wrap: wrap;
 
   gap: 0.8rem;
+
+  /* 사진과 페이지 번호 사이 간격 */
   margin-top: 3.5rem;
   margin-bottom: 1.5rem;
+
+  text-align: center;
 }
 
 /* 이전, 다음, 페이지 번호 */
@@ -789,33 +793,47 @@
   height: auto;
   padding: 0.25rem 0.2rem;
 
+  /* 테두리와 배경 제거 */
   border: none;
+  outline: none;
   background: transparent;
+  box-shadow: none;
 
   color: #999;
   font: inherit;
   font-weight: 400;
+  line-height: 1.4;
 
   cursor: pointer;
 }
 
 /* 마우스를 올렸을 때 */
-.fun-page-button:hover:not(:disabled) {
+.fun-page-button:hover:not(:disabled):not(.is-current) {
   color: #555;
 }
 
 /* 현재 페이지 번호 */
 .fun-page-button.is-current {
-  color: #333;
+  color: var(--global-text-color, #333);
   font-weight: 700;
+  cursor: default;
 }
 
-/* 사용할 수 없는 이전/다음 버튼 */
+/* 사용할 수 없는 이전·다음 버튼 */
 .fun-page-button:disabled {
   color: #ccc;
   opacity: 1;
   cursor: default;
-}</style>
+}
+
+/* 페이지 사이의 … 표시 */
+.fun-page-ellipsis {
+  padding: 0 0.1rem;
+  color: #999;
+  line-height: 1.4;
+  user-select: none;
+}
+</style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -827,13 +845,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   gallery.dataset.paginationReady = "true";
 
-  const items = Array.from(gallery.querySelectorAll(".fun-item"));
+  const items = Array.from(
+    gallery.querySelectorAll(".fun-item")
+  );
+
   const pagination = gallery.querySelector(".fun-pagination");
-  const perPage = Number(gallery.dataset.perPage) || 10;
+
+  /* data-per-page 값. 현재 15개씩 표시 */
+  const perPage = Number(gallery.dataset.perPage) || 15;
+
   const totalPages = Math.ceil(items.length / perPage);
 
   let currentPage = 1;
 
+  /*
+   * 현재 페이지에 표시되는 사진만 실제로 불러옴
+   */
   function loadImage(item) {
     const image = item.querySelector("img[data-src]");
 
@@ -842,11 +869,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  /*
+   * 이전, 다음, 숫자 버튼 생성
+   */
   function createButton(label, page, options = {}) {
     const button = document.createElement("button");
 
     button.type = "button";
-    button.className = options.className || "fun-page-button";
+    button.className =
+      options.className || "fun-page-button";
+
     button.textContent = label;
     button.disabled = options.disabled || false;
 
@@ -856,12 +888,87 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     button.addEventListener("click", function () {
+      if (
+        button.disabled ||
+        page === currentPage
+      ) {
+        return;
+      }
+
       showPage(page, true);
     });
 
     return button;
   }
 
+  /*
+   * 페이지 번호 사이의 … 생성
+   */
+  function createEllipsis() {
+    const ellipsis = document.createElement("span");
+
+    ellipsis.className = "fun-page-ellipsis";
+    ellipsis.textContent = "…";
+    ellipsis.setAttribute("aria-hidden", "true");
+
+    return ellipsis;
+  }
+
+  /*
+   * 화면에 표시할 페이지 번호 결정
+   *
+   * 전체 페이지가 7개 이하:
+   * 1 2 3 4 5 6 7
+   *
+   * 현재 페이지가 앞쪽:
+   * 1 2 3 4 5 … 20
+   *
+   * 현재 페이지가 중간:
+   * 1 … 9 10 11 … 20
+   *
+   * 현재 페이지가 뒤쪽:
+   * 1 … 16 17 18 19 20
+   */
+  function getVisiblePages() {
+    if (totalPages <= 7) {
+      return Array.from(
+        { length: totalPages },
+        function (_, index) {
+          return index + 1;
+        }
+      );
+    }
+
+    if (currentPage <= 4) {
+      return [1, 2, 3, 4, 5, "ellipsis", totalPages];
+    }
+
+    if (currentPage >= totalPages - 3) {
+      return [
+        1,
+        "ellipsis",
+        totalPages - 4,
+        totalPages - 3,
+        totalPages - 2,
+        totalPages - 1,
+        totalPages
+      ];
+    }
+
+    return [
+      1,
+      "ellipsis",
+      currentPage - 1,
+      currentPage,
+      currentPage + 1,
+      "ellipsis",
+      totalPages
+    ];
+  }
+
+  /*
+   * 하단 페이지 버튼 표시
+   */
   function renderPagination() {
     pagination.innerHTML = "";
 
@@ -873,36 +980,68 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination.hidden = false;
 
     pagination.appendChild(
-      createButton("이전", currentPage - 1, {
-        className: "fun-page-button fun-page-prev",
-        disabled: currentPage === 1
-      })
+      createButton(
+        "이전",
+        currentPage - 1,
+        {
+          className:
+            "fun-page-button fun-page-prev",
+          disabled: currentPage === 1
+        }
+      )
     );
 
-    for (let page = 1; page <= totalPages; page++) {
+    const visiblePages = getVisiblePages();
+
+    visiblePages.forEach(function (page) {
+      if (page === "ellipsis") {
+        pagination.appendChild(createEllipsis());
+        return;
+      }
+
       pagination.appendChild(
-        createButton(String(page), page, {
-          current: page === currentPage
-        })
+        createButton(
+          String(page),
+          page,
+          {
+            current: page === currentPage
+          }
+        )
       );
-    }
+    });
 
     pagination.appendChild(
-      createButton("다음", currentPage + 1, {
-        className: "fun-page-button fun-page-next",
-        disabled: currentPage === totalPages
-      })
+      createButton(
+        "다음",
+        currentPage + 1,
+        {
+          className:
+            "fun-page-button fun-page-next",
+          disabled: currentPage === totalPages
+        }
+      )
     );
   }
 
+  /*
+   * 선택한 페이지의 사진만 표시
+   */
   function showPage(page, shouldScroll) {
-    currentPage = Math.max(1, Math.min(page, totalPages));
+    currentPage = Math.max(
+      1,
+      Math.min(page, totalPages)
+    );
 
-    const startIndex = (currentPage - 1) * perPage;
-    const endIndex = startIndex + perPage;
+    const startIndex =
+      (currentPage - 1) * perPage;
+
+    const endIndex =
+      startIndex + perPage;
 
     items.forEach(function (item, index) {
-      const isVisible = index >= startIndex && index < endIndex;
+      const isVisible =
+        index >= startIndex &&
+        index < endIndex;
 
       item.hidden = !isVisible;
 
@@ -913,6 +1052,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     renderPagination();
 
+    /*
+     * 페이지 번호를 누르면 갤러리 위쪽으로 이동
+     */
     if (shouldScroll) {
       gallery.scrollIntoView({
         behavior: "smooth",
@@ -921,8 +1063,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  /*
+   * 사진이 있는 경우 첫 페이지 표시
+   */
   if (items.length > 0) {
     showPage(1, false);
+  } else {
+    pagination.hidden = true;
   }
 });
 </script>
