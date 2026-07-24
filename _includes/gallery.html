@@ -1,20 +1,143 @@
-{% assign items = site.data[include.data]  | sort: "date" | reverse %}
+{% assign items = site.data[include.data] | sort: "date" | reverse %}
+{% assign gallery_id = include.data | slugify | prepend: "fun-gallery-" %}
 
-<div class="fun-grid">
-  {% for item in items %}
-    <figure class="fun-item">
+<div
+  id="{{ gallery_id }}"
+  class="fun-gallery"
+  data-per-page="10"
+>
+  <div class="fun-grid">
+    {% for item in items %}
+      <figure class="fun-item" hidden>
 
         <img
-          src="{{ '/assets/img/fun/' | append: item.file | relative_url }}"
+          data-src="{{ '/assets/img/fun/' | append: item.file | relative_url }}"
           alt="{{ item.caption | escape }}"
           loading="lazy"
+          decoding="async"
           data-zoomable
         >
 
+        {% if item.caption %}
+          <figcaption>{{ item.caption }}</figcaption>
+        {% endif %}
 
-      {% if item.caption %}
-        <figcaption>{{ item.caption }}</figcaption>
-      {% endif %}
-    </figure>
-  {% endfor %}
+      </figure>
+    {% endfor %}
+  </div>
+
+  <nav
+    class="fun-pagination"
+    aria-label="사진 목록 페이지"
+  ></nav>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const gallery = document.getElementById("{{ gallery_id }}");
+
+  if (!gallery || gallery.dataset.paginationReady === "true") {
+    return;
+  }
+
+  gallery.dataset.paginationReady = "true";
+
+  const items = Array.from(gallery.querySelectorAll(".fun-item"));
+  const pagination = gallery.querySelector(".fun-pagination");
+  const perPage = Number(gallery.dataset.perPage) || 10;
+  const totalPages = Math.ceil(items.length / perPage);
+
+  let currentPage = 1;
+
+  function loadImage(item) {
+    const image = item.querySelector("img[data-src]");
+
+    if (image && !image.hasAttribute("src")) {
+      image.setAttribute("src", image.dataset.src);
+    }
+  }
+
+  function createButton(label, page, options = {}) {
+    const button = document.createElement("button");
+
+    button.type = "button";
+    button.className = options.className || "fun-page-button";
+    button.textContent = label;
+    button.disabled = options.disabled || false;
+
+    if (options.current) {
+      button.classList.add("is-current");
+      button.setAttribute("aria-current", "page");
+    }
+
+    button.addEventListener("click", function () {
+      showPage(page, true);
+    });
+
+    return button;
+  }
+
+  function renderPagination() {
+    pagination.innerHTML = "";
+
+    if (totalPages <= 1) {
+      pagination.hidden = true;
+      return;
+    }
+
+    pagination.hidden = false;
+
+    pagination.appendChild(
+      createButton("이전", currentPage - 1, {
+        className: "fun-page-button fun-page-prev",
+        disabled: currentPage === 1
+      })
+    );
+
+    for (let page = 1; page <= totalPages; page++) {
+      pagination.appendChild(
+        createButton(String(page), page, {
+          current: page === currentPage
+        })
+      );
+    }
+
+    pagination.appendChild(
+      createButton("다음", currentPage + 1, {
+        className: "fun-page-button fun-page-next",
+        disabled: currentPage === totalPages
+      })
+    );
+  }
+
+  function showPage(page, shouldScroll) {
+    currentPage = Math.max(1, Math.min(page, totalPages));
+
+    const startIndex = (currentPage - 1) * perPage;
+    const endIndex = startIndex + perPage;
+
+    items.forEach(function (item, index) {
+      const isVisible = index >= startIndex && index < endIndex;
+
+      item.hidden = !isVisible;
+
+      if (isVisible) {
+        loadImage(item);
+      }
+    });
+
+    renderPagination();
+
+    if (shouldScroll) {
+      gallery.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  }
+
+  if (items.length > 0) {
+    showPage(1, false);
+  }
+});
+</script>
