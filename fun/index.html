@@ -127,7 +127,7 @@
 
           <article>
             
-<div id="fun-gallery-fun" class="fun-gallery" data-per-page="10">
+<div id="fun-gallery-fun" class="fun-gallery" data-per-page="15">
   <div class="fun-grid">
     
       <figure class="fun-item" hidden="">
@@ -766,52 +766,56 @@
 </div>
 
 <style>
-/* hidden 속성이 기존 grid CSS에 의해 무시되지 않도록 설정 */
+/* 숨겨진 사진은 표시하지 않음 */
 .fun-item[hidden] {
   display: none !important;
 }
 
+/* 페이지 번호 영역 */
 .fun-pagination {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 2rem;
+
+  gap: 0.8rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
 }
 
+/* 이전, 다음, 페이지 번호 */
 .fun-page-button {
-  min-width: 2.4rem;
-  height: 2.4rem;
-  padding: 0 0.75rem;
+  min-width: auto;
+  height: auto;
+  padding: 0.25rem 0.2rem;
 
-  border: 1px solid var(--global-divider-color);
-  border-radius: 0.35rem;
+  border: none;
+  background: transparent;
 
-  background: var(--global-bg-color);
-  color: var(--global-text-color);
-
+  color: #999;
   font: inherit;
+  font-weight: 400;
+
   cursor: pointer;
 }
 
+/* 마우스를 올렸을 때 */
 .fun-page-button:hover:not(:disabled) {
-  border-color: var(--global-theme-color);
-  color: var(--global-theme-color);
+  color: #555;
 }
 
+/* 현재 페이지 번호 */
 .fun-page-button.is-current {
-  border-color: var(--global-theme-color);
-  background: var(--global-theme-color);
-  color: white;
-  font-weight: 600;
+  color: #333;
+  font-weight: 700;
 }
 
+/* 사용할 수 없는 이전/다음 버튼 */
 .fun-page-button:disabled {
-  opacity: 0.4;
+  color: #ccc;
+  opacity: 1;
   cursor: default;
-}
-</style>
+}</style>
 
 <script>
 
