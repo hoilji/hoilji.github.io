@@ -85,6 +85,33 @@
       <li>email: kmc5387 [at] kist.re.kr</li>
     </ul>
 
+- group: "Researchers"
+  name: "Dogeun Yoon (윤도근)"
+  role: "MS Intern"
+  photo: "dogeun.jpg"
+  affiliation: |
+    Korea Institute of Science and Technology (KIST)<br>
+  interests: ["Proton conductors", "Solid State Ionics"]
+  scholar_url: "https://scholar.google.co.kr/citations?user=YgPjLtEAAAAJ&hl=ko&oi=sra"
+  bio: |
+    <strong>Education</strong>
+    <ul>
+      <li>MS in Mechanical Engineering, Yeonsei Univ (2024-2026)<br>
+        <small><em>with Dr. Ho-Il Ji</em></small></li>
+      <li>BS in Mechanical Engineering, Seoul National University of Science and Technology (2016-2024)<br></li>
+    </ul>
+    <strong>Employment</strong>
+    <ul>    
+      <li>MS Intern in KIST (2026-present)<br>
+        <small><em>with Dr. Ho-Il Ji </em></small></li>
+    <ul>
+      <li>student intern, KIST (2023-2024)</li>
+    </ul>
+    <strong>Contact Information</strong>
+    <ul>
+      <li>email: 124515 [at] kist.re.kr</li>
+    </ul>    
+
 - group: "Students"
   name: "Hyeonwoo Kim (김현우)"
   role: "PhD Student"
@@ -109,32 +136,7 @@
     <ul>
       <li>email: hyeonwoo [at] kist.re.kr</li>
     </ul>
-
-- group: "Students"
-  name: "Dogeun Yoon (윤도근)"
-  role: "MS Student"
-  photo: "dogeun.jpg"
-  affiliation: |
-    Korea Institute of Science and Technology (KIST)<br>
-    Yeonsei University (Yeonsei Univ)
-  interests: ["Proton conductors", "Solid State Ionics"]
-  scholar_url: "https://scholar.google.co.kr/citations?user=YgPjLtEAAAAJ&hl=ko&oi=sra"
-  bio: |
-    <strong>Education</strong>
-    <ul>
-      <li>MS in Mechanical Engineering, Yeonsei Univ (2024-Present)<br>
-        <small><em>with Dr. Ho-Il Ji</em></small></li>
-      <li>BS in Mechanical Engineering, Seoul National University of Science and Technology (2016-2024)<br></li>
-    </ul>
-    <strong>Employment</strong>
-    <ul>
-      <li>student intern, KIST (2023-2024)</li>
-    </ul>
-    <strong>Contact Information</strong>
-    <ul>
-      <li>email: 124515 [at] kist.re.kr</li>
-    </ul>
-    
+   
 - group: "Students"
   name: "Minji Kang (강민지)"
   role: "MS Student"
