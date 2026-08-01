@@ -62,30 +62,6 @@
     </ul>
 
 - group: "Researchers"
-  name: "Seulchan Kim (김슬찬)"
-  role: "MS Intern"
-  photo: "seulchan.jpg"
-  affiliation: "Korea Institute of Science and Technology (KIST)"
-  interests: ["Solid State Ionics", "Triple-Conducting Oxides"]
-  scholar_url: "https://scholar.google.co.kr/citations?user=Hn05gN8AAAAJ&hl=ko&oi=sra"
-  bio: |
-    <strong>Education</strong>
-    <ul>
-      <li>MS in Renewable Energy, Korea Univ (2022-2024)<br>
-        <small><em>with Dr. Ho-Il Ji & Dr. Ji-Won Son</em></small></li>
-      <li>BS in Chemistry, Konkuk University (2015-2022)<br></li>
-    </ul>
-    <strong>Employment</strong>
-    <ul>    
-      <li>MS Intern in KIST (2024-present)<br>
-        <small><em>with Dr. Ho-Il Ji </em></small></li>
-    </ul>
-    <strong>Contact Information</strong>
-    <ul>
-      <li>email: ksch2 [at] kist.re.kr</li>
-    </ul>
-
-- group: "Researchers"
   name: "Mincheol Kim (김민철)"
   role: "MS Intern"
   photo: "mincheol.jpg"
@@ -177,7 +153,15 @@
     <ul>
       <li>email: 125001 [at] kist.re.kr</li>
     </ul>
-  
+
+- group: "Alumni"
+  name: "Seulchan Kim (김슬찬)"
+  role: "MS Student (2022 - 2024), MS Intern(2024-2026)"
+  photo: "seulchan.jpg"
+  affiliation: ""
+  interests: ["Solid State Ionics", "Triple-Conducting Oxides"]
+  scholar_url: "https://scholar.google.co.kr/citations?user=Hn05gN8AAAAJ&hl=ko&oi=sra"
+   
 - group: "Alumni"
   name: "Junseok Kim (김준석)"
   role: "MS / PhD Student (2018 - 2023)"
