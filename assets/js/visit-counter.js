@@ -1,6 +1,6 @@
 (() => {
   const WORKSPACE = "hoilji-site";
-  const NAME = "site-visits";
+  const NAME = "hoilji-site";
 
   // V1에서 쓰던 connect_time과 분리
   const STORAGE_KEY = "connect_time_v2";
