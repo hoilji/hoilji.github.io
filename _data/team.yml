@@ -204,6 +204,32 @@
       <li>Email: 125001 [at] kist.re.kr</li>
     </ul>
 
+- name: "Hyunsoo Kim (김현수)"
+  role: "MS/PhD Student"
+  group: "Students"
+  photo: ""
+  affiliation: |
+    Korea Institute of Science and Technology (KIST)<br>
+    Korea University
+  interests: ["Proton Conductors", "PCFC/PCEC"]
+  scholar_url: ""
+  bio: |
+    <strong>Education</strong>
+    <ul>
+      <li>
+        MS/PhD in Materials Science & Engineering, Korea Univ. (2026-Present)<br>
+        <small><em>with Dr. Ho-Il Ji</em></small>
+      </li>
+      <li>
+        BS in Materials Science & Engineering, Keimyung University (2020-2026)
+      </li>
+    </ul>
+
+    <strong>Contact Information</strong>
+    <ul>
+      <li>Email: 125001 [at] kist.re.kr</li>
+    </ul>
+
 - name: "Seulchan Kim (김슬찬)"
   role: "MS Student (2022-2024), MS Intern (2024-2026)"
   group: "Alumni"
