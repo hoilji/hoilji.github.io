@@ -77,6 +77,39 @@
       <li>Email: j.eigen [at] kist.re.kr</li>
     </ul>
 
+- name: "SungHun Woo(우성훈)"
+  role: "PostDoc"
+  group: "Researchers"
+  photo: "sang hoon.jpg"
+  affiliation: "Korea Institute of Science and Technology (KIST)"
+  interests: ["Solid State Ionics", "Triple-Conducting Oxides"]
+  scholar_url: "https://scholar.google.com/citations?user=lZTZP14AAAAJ&hl=ko"
+  bio: |
+    <strong>Education</strong>
+    <ul>
+      <li>
+        PHD in Materials Science and Engineering, Inha University (2022-2026)<br>
+        <small><em>with Prof. Haejin Hwang</em></small>
+      </li>
+      <li>
+        MS in Materials Science and Engineering, Hanbat National University (2018-2020)<br>
+        <small><em>with Prof. Junghyun Kim</em></small>
+      </li>
+      <li>
+        BS in Materials Science and Engineering, Hanbat National University (2011-2018)<br>
+      </li>
+    </ul>
+
+    <strong>Employment</strong>
+    <ul>
+      <li>Researcher, Korea Institute of Science and Technology (2026-Present)</li>
+    </ul>
+
+    <strong>Contact Information</strong>
+    <ul>
+      <li>Email: 000000 [at] kist.re.kr</li>
+    </ul>
+
 - name: "Mincheol Kim (김민철)"
   role: "MS Intern"
   group: "Researchers"
