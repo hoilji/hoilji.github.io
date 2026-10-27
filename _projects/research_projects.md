@@ -73,6 +73,12 @@ category: our research
   </div>
 </div>
 
+<div class="col-md-9">
+   <br>
+   <br>
+<h4><strong> Completed Projects </strong></h4>
+</div>
+
 <div class="row align-items-center my-4">
   <!-- Left: Image (1/4) -->
   <div class="col-md-3 text-center">
@@ -93,14 +99,6 @@ category: our research
     </p>
   </div>
 </div>
-
-
-<div class="col-md-9">
-   <br>
-   <br>
-<h4><strong> Completed Projects </strong></h4>
-</div>
-
 
 <div class="row align-items-center my-4">
   <!-- Left: Image (1/4) -->
