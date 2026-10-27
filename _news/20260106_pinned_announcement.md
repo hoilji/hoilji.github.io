@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Announcement: Recruiting (2026) [link]"
-date: 2026-01-06
+title: "Announcement: Recruiting (2027) [link]"
+date: 2026-10-27
 pinned: true
 ---
 <div>
@@ -15,8 +15,9 @@ pinned: true
       </ul>
 모집인원:
  <ul>
-      <li>박사 후 연구원 1인</li>
-      <li>석박사 통합과정 및 박사과정 2인 내외</li>
+      <li>박사후 연구원 1인</li>
+      <li>석박사 통합과정 및 박사과정 2인</li>
+      <li>석사과정 1인</li>
  </ul>
 관련전공:
      <ul>
